@@ -1,3 +1,4 @@
+#include "WProgram.h"
 #include <PCD8544.h>
 
 static PCD8544 lcd(9, 8, 7, 6, 5);

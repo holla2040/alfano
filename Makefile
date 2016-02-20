@@ -26,4 +26,4 @@ con:
 	microcom -p $(ARDUINO_PORT) -s $(CONSOLE_BAUDRATE)
 
 run: all
-	/home/holla/arduino-1.6.5/hardware/tools/avr/bin/avrdude -C/home/holla/arduino-1.6.5/hardware/tools/avr/etc/avrdude.conf -v -V -patmega328p -carduino -P/dev/ttyUSB0 -b57600 -D -Uflash:w:build-cli/engraverSpindle.hex:i
+	/home/holla/arduino/hardware/tools/avr/bin/avrdude -C/home/holla/arduino/hardware/tools/avr/etc/avrdude.conf -v -V -patmega328p -carduino -P/dev/ttyUSB0 -b57600 -D -Uflash:w:build-cli/engraverSpindle.hex:i
